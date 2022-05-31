@@ -1,0 +1,189 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local LoginFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local LoginButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Pass = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local User = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local Title_2 = Instance.new("TextLabel")
+local Warning = Instance.new("TextLabel")
+local Welcome = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+LoginFrame.Name = "LoginFrame"
+LoginFrame.Parent = ScreenGui
+LoginFrame.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
+LoginFrame.Position = UDim2.new(0.343689799, 0, 0.271441162, 0)
+LoginFrame.Size = UDim2.new(0, 240, 0, 228)
+LoginFrame.Active = true
+LoginFrame.Draggable = true
+
+UICorner.Parent = LoginFrame
+
+LoginButton.Name = "LoginButton"
+LoginButton.Parent = LoginFrame
+LoginButton.BackgroundColor3 = Color3.fromRGB(189, 255, 46)
+LoginButton.Position = UDim2.new(0.0458333343, 0, 0.802238822, 0)
+LoginButton.Size = UDim2.new(0, 218, 0, 39)
+LoginButton.Font = Enum.Font.Bodoni
+LoginButton.Text = "LOGIN"
+LoginButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+LoginButton.TextScaled = true
+LoginButton.TextSize = 14.000
+LoginButton.TextStrokeTransparency = 0.000
+LoginButton.TextWrapped = true
+
+UICorner_2.Parent = LoginButton
+
+Pass.Name = "Pass"
+Pass.Parent = LoginFrame
+Pass.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pass.Position = UDim2.new(0.0458333343, 0, 0.537313461, 0)
+Pass.Size = UDim2.new(0, 218, 0, 50)
+Pass.Font = Enum.Font.SourceSans
+Pass.PlaceholderText = "Password"
+Pass.Text = ""
+Pass.TextColor3 = Color3.fromRGB(0, 0, 0)
+Pass.TextScaled = true
+Pass.TextSize = 14.000
+Pass.TextWrapped = true
+
+UICorner_3.Parent = Pass
+
+User.Name = "User"
+User.Parent = LoginFrame
+User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+User.Position = UDim2.new(0.0458333343, 0, 0.269769609, 0)
+User.Size = UDim2.new(0, 218, 0, 50)
+User.Font = Enum.Font.SourceSans
+User.PlaceholderText = "Username"
+User.Text = ""
+User.TextColor3 = Color3.fromRGB(0, 0, 0)
+User.TextScaled = true
+User.TextSize = 14.000
+User.TextWrapped = true
+
+UICorner_4.Parent = User
+
+Title.Name = "Title"
+Title.Parent = LoginFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(-0.049142763, 0, -0.00366258621, 0)
+Title.Size = UDim2.new(0, 240, 0, 50)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Funky Friday"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextStrokeTransparency = 0.000
+Title.TextWrapped = true
+
+Title_2.Name = "Title"
+Title_2.Parent = LoginFrame
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(-0.00412392616, 0, -0.00366258621, 0)
+Title_2.Size = UDim2.new(0, 229, 0, 50)
+Title_2.Font = Enum.Font.SourceSans
+Title_2.Text = "Funky Friday"
+Title_2.TextColor3 = Color3.fromRGB(93, 150, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextStrokeTransparency = 0.000
+Title_2.TextWrapped = true
+
+Warning.Name = "Warning"
+Warning.Parent = LoginFrame
+Warning.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Warning.BackgroundTransparency = 1.000
+Warning.Position = UDim2.new(0.016709391, 0, 0.996337354, 0)
+Warning.Size = UDim2.new(0, 235, 0, 28)
+Warning.Visible = false
+Warning.Font = Enum.Font.SourceSans
+Warning.Text = "Get Key: discord.gg/BZ3sKvkZyF"
+Warning.TextColor3 = Color3.fromRGB(255, 0, 4)
+Warning.TextScaled = true
+Warning.TextSize = 14.000
+Warning.TextStrokeTransparency = 0.000
+Warning.TextWrapped = true
+
+Welcome.Name = "Welcome"
+Welcome.Parent = ScreenGui
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.Position = UDim2.new(0.602870822, 0, 0.0410257541, 0)
+Welcome.Size = UDim2.new(0, 326, 0, 158)
+Welcome.Visible = false
+
+TextButton.Parent = Welcome
+TextButton.BackgroundColor3 = Color3.fromRGB(7, 255, 193)
+TextButton.Position = UDim2.new(0, 0, 0.287581712, 0)
+TextButton.Size = UDim2.new(0, 326, 0, 43)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Enable MoreScore "
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+TextButton_2.Parent = Welcome
+TextButton_2.BackgroundColor3 = Color3.fromRGB(7, 255, 193)
+TextButton_2.Position = UDim2.new(0, 0, 0.564971745, 0)
+TextButton_2.Size = UDim2.new(0, 326, 0, 40)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Enable AutoPlayer (BETA)"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+TextLabel.Parent = Welcome
+TextLabel.BackgroundColor3 = Color3.fromRGB(41, 109, 255)
+TextLabel.Size = UDim2.new(0, 326, 0, 45)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Funky Friday : Print "
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = Welcome
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(202, 255, 8)
+TextLabel_2.Position = UDim2.new(0, 0, 0.803797483, 0)
+TextLabel_2.Size = UDim2.new(0, 326, 0, 31)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "zanyscheats.weebly.com"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+-- Scripts:
+
+local function ELRVD_fake_script() -- LoginFrame.LocalScript 
+	local script = Instance.new('LocalScript', LoginFrame)
+
+	local Button = script.Parent.LoginButton
+	local Pass = script.Parent.Pass
+	local User = script.Parent.User
+	local Warning = script.Parent.Warning
+	
+	Button.MouseButton1Click:Connect(function()
+		if User.Text == "Print" and Pass.Text == "ScriptWithPrint" or User.Text == "admin34543553345353" and Pass.Text == "pass" then
+			script.Parent.Parent.Welcome.Visible = true
+			script.Parent.Visible = false
+		else
+			Warning.Visible = true
+			wait(1)
+			Warning.Visible = false
+		end
+	end)
+end
+coroutine.wrap(ELRVD_fake_script)()
